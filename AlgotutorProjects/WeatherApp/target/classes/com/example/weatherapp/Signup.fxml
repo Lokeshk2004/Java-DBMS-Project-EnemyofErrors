@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #38aef8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherapp.SignupController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="253.0" style="-fx-background-color: #35a5f7;">
+            <children>
+                <ImageView fitHeight="400.0" fitWidth="256.0" layoutY="-1.0">
+                    <image>
+                        <Image url="@../../../Asserts/WEATHERinfo.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="372.0" layoutY="58.0" prefHeight="32.0" prefWidth="103.0" text="Sign Up">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="296.0" layoutY="107.0">
+            <image>
+                <Image url="@../../../Asserts/icons8-user-100.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="300.0" layoutY="162.0">
+            <image>
+                <Image url="@../../../Asserts/icons8-password-60.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="tf_username" layoutX="337.0" layoutY="111.0" prefHeight="30.0" prefWidth="230.0" promptText="Enter Name" />
+      <Button fx:id="button_login" layoutX="337.0" layoutY="277.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Already a member? Log In" textFill="#0a065b">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_signup" layoutX="360.0" layoutY="314.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-radius: 120;" text="      Sign Up        ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rb_bradenburg" layoutX="242.0" layoutY="215.0" mnemonicParsing="false" text="Brandenburg">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb_ketchikan" layoutX="351.0" layoutY="216.0" mnemonicParsing="false" text="Ketchikan">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb_moscow" layoutX="452.0" layoutY="215.0" mnemonicParsing="false" text="Moscow">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb_chennai" layoutX="300.0" layoutY="243.0" mnemonicParsing="false" text="Chennai">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb_kozhikode" layoutX="408.0" layoutY="243.0" mnemonicParsing="false" text="Kozhikode">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="tf_password" layoutX="342.0" layoutY="161.0" prefHeight="32.0" prefWidth="230.0" promptText="Enter Password" />
+    </children>
+</AnchorPane>
